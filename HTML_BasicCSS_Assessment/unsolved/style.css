@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: #79B9C6;
+}
+body p {
+  font-family: Arial;
+  font-weight: bold;
+  color: white;
+}
+
+section{
+  color: white;
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)  
+}
+section h1 {
+  font-size: 5em;
+  font-family: Arial;
+  font-weight: bold;
+}
+section p {
+   text-align: center;
+   color: black;
+   font-weight: normal;
+}
+button{
+  padding: 1em 1em;
+  color:white;
+  display: block;
+  margin: 0 auto; 
+  text-transform: uppercase;
+  background-color: #79B9C6;
+  border: 2px solid white;
+  
+}
+
+
+      
+
+
