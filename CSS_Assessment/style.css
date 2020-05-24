@@ -1,0 +1,51 @@
+/**
+ * Float Layout Activity
+ **/
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  header {
+    background: grey;
+    position: relative;
+  }
+  
+  #parent {
+      display: table;
+      width: 100%;
+      table-layout: fixed;
+  }
+  
+  #child1 {
+    float: left;
+    width: 50%;
+    background: blue;
+    display: table-cell;
+    text-align: center;
+
+    height: 300px;
+    margin-top: 30px;
+    padding-top: 270px;
+    
+  }
+  #child2 {
+    float: right;
+    width: 25%;
+    background:red;
+    display: table-cell;
+    text-align: center;
+
+    height: 300px;
+    margin-top: 30px;
+    padding-top: 270px;
+  }
+
+  footer {
+    background: green;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+  }
+  
