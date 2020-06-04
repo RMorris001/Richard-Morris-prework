@@ -21,12 +21,14 @@ var guessArea = document.getElementById("guesses");
 var livesArea = document.getElementById("lives");
 var winArea = document.getElementById("wins");
 var lossArea = document.getElementById("losses");
+var previous = document.getElementById("previous");
 
 //HTML UI
 guessArea.innerHTML = "Guesses: " + usedLetters;
 livesArea.innerHTML ="Lives: " + guesses;
 winArea.innerHTML = "Wins: " + wins;
 lossArea.innerHTML = "Losses: " + losses;
+previous.innerHTML = "Previous Word: " + currentArray.join('');
 
 
 function updateArray() {
@@ -65,6 +67,7 @@ function didYouWin() {
   if (one === two) {
     wins = wins + 1;
     console.log("you won a game");
+    previous.innerHTML = "Previous Word: " + currentArray.join('');
     refresh();
     playWin();
     refreshGame();
@@ -102,6 +105,7 @@ function refresh() {
   livesArea.innerHTML ="Lives: " + guesses;
   winArea.innerHTML = "Wins: " + wins;
   lossArea.innerHTML = "Losses: " + losses;
+  previous.innerHTML = "Previous Word: " + currentArray.join('');
 }
 function refreshGame() {
   guesses = 10;
