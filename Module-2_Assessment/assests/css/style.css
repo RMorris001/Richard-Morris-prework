@@ -1,0 +1,32 @@
+@font-face {
+  font-family: Norse;
+  src: url("Norse-KaWl.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Norse_bold;
+  font-weight: bold;
+  src: url("NorseBold-2Kge.otf") format("opentype");
+}
+
+body{ 
+  font-family: 'Norse_bold';
+  font-size:20px ;
+}
+.jumbotron{
+  background-color: #5A6243;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+#footer{
+  background-color: #5A6243;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+body{
+  background-image: url('../images/Dark-forest.jpg');
+  color: white;
+}
+
+

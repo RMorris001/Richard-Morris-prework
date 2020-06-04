@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Viking Hangman</title>
+  <link rel="icon" type="image/png" href="https://img.icons8.com/windows/30/000000/viking-ship.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="assests/css/style.css">
+  <link rel="stylesheet" href="assests/css/style.css">
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>Viking Hangman</h1>
+  </div>
+  <div class="container" style="margin-top:30px" id="background">
+    <div class="row">
+
+      <div class="col-sm-8" style="background: rgba(0, 0, 0, 0.5);">
+        <h2>Press Any Key to get started! </h2>
+        <br>
+        <h3 id="word_area"></h3>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <p id="lives"></p>
+              <p id="log"></p>
+              <p id="guesses"></p>
+            </div>
+            <div class="col-sm-6">
+              <p id="wins"></p>
+              <p id="losses"></p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <h2>Fun Facts</h2>
+        <p>Facts provided by History.com</p>
+        <ul>
+          <p>1. Vikings didnt wear helmets!</p>
+          <p>2. Vikings had great hygine!</p>
+          <p>3. Vikings used a unique liquid to start fires!</p>
+          <p>4. Viking women enjoyed some basic rights!</p>
+          <p>5. Viking men spent most of their time farming!</p>
+          <p>6. Vikings were never part of a unified group!</p>
+        </ul>
+      </div>
+
+      <div class="col-sm-4" style="background: rgba(0, 0, 0, 0.5);">
+        <h2>Choose A Song</h2>
+        <iframe src="https://open.spotify.com/embed/playlist/4eOtGyE7j1W34uyghmXKLw" width="360" height="700"
+          frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <br>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <audio>
+    <source src="assests/sfx/Computer Error-SoundBible.com-399240903.mp3" id="wrongSfx" />
+    <source src="assests/sfx/Metal Impact Hollow-SoundBible.com-583611978.mp3" id="correctSfx" />
+  </audio>
+</body>
+<script src="assests/javascript/game.js"></script>
+
+</html>
